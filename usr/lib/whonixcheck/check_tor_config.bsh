@@ -59,7 +59,7 @@ Try to look at this report yourself by running.
 
 $start_menu_instructions_system_first_part Terminal
 
-<blockquote>sudo -u debian-tor tor --verify-config</blockquote>
+<blockquote>sudo --non-interactive /usr/bin/tor --defaults-torrc /usr/share/tor/tor-service-defaults-torrc -f /etc/tor/torrc --RunAsDaemon 0 --verify-config</blockquote>
 
 <p>To try to fix this, please open your Tor config file.
 
